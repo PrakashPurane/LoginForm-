@@ -1,0 +1,99 @@
+.container {
+  /* position: relative; */
+  width: 650px;
+  background-color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 0.6rem;
+}
+
+header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  color: rgb(100, 97, 91);
+  font-size: 0.9 rem;
+  margin-bottom: 5rem;
+}
+
+.input-field,
+form .button {
+  margin: 25px 0;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.input-field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid silver;
+  padding-left: 15px;
+  font-size: 19px;
+  outline: none;
+  transition: 0.2s ease-in;
+}
+
+input:focus {
+  border: 1px solid rgb(95, 95, 223);
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: rgb(100, 97, 91);
+  pointer-events: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translatey(-49px);
+  background-color: #ffffff;
+  font-size: 16px;
+  color: rgb(0, 207, 249);
+}
+
+form a[href="#"]{
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 25rem;
+}
+
+form button{
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-size: 1.1rem;
+  width: 33rem;
+  padding: 18px 12px;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover{
+  border-color: aqua;
+  color: rgb(22, 22, 3);
+  background: linear-gradient(123deg, rgb(225, 225, 64) 100.1%, blue 69%);
+}
+
+.auth hr{
+  position: relative;
+  margin-top: 4rem;
+  
+}
+
+.auth .auths{
+  position: absolute;
+  left:715px;
+  bottom: 231px;
+  z-index: 1;
+  background-color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
