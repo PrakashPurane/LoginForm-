@@ -4,6 +4,7 @@
   background-color: #ffffff;
   padding: 50px 60px;
   border-radius: 0.6rem;
+  box-shadow: 5px 14px  37px rgb(32, 32, 32);
 }
 
 header {
@@ -51,6 +52,27 @@ input:focus {
   transition: 0.4s;
 }
 
+ .eye{
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  visibility: hidden;
+}
+.eyeclose{
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  visibility: hidden;
+}
+
+input:valid ~ .eye,
+input:valid ~ .eyeclose{
+  visibility: visible;
+}
+
+
 input:focus ~ label,
 input:valid ~ label {
   transform: translatey(-49px);
@@ -79,7 +101,7 @@ form button{
 button:hover{
   border-color: aqua;
   color: rgb(22, 22, 3);
-  background: linear-gradient(123deg, rgb(225, 225, 64) 100.1%, blue 69%);
+  background: linear-gradient(123deg, rgb(63, 242, 47) 100.1%, blue 69%);
 }
 
 .auth hr{
@@ -89,11 +111,51 @@ button:hover{
 }
 
 .auth .auths{
+  color: gray;
   position: absolute;
-  left:715px;
-  bottom: 231px;
+  left:870px;
+  bottom: 322px;
   z-index: 1;
   background-color: #ffffff;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.links{
+  display: block;
+  margin-top: 3.9rem;
+}
+
+.google{
+  border: 1px solid silver ;
+  width: 33rem;
+  padding: 15px 14px;
+  color: #0a0a0a;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+
+.apple{
+  border: 1px solid silver ;
+  width: 33rem;
+  padding: 15px 14px;
+  color: #0a0a0a;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.google .googles{
+  font-size: 1.7rem;
+  margin-bottom: -0.5rem;
+  padding-right: 2px;
+  margin-left: -1rem;
+}
+
+.apple .apples{
+  font-size: 1.7rem;
+  margin-bottom: -0.5rem;
+  padding-right: 2px;
+  margin-left: -1rem;
+}
+
